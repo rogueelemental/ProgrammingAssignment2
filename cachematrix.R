@@ -1,7 +1,10 @@
 ## makeCacheMatrix and cacheSolve are a pair of functions that operate together.
-## makeCacheMatrix returns a 
+## Their purpose is to calculate and cache an inverse of a matrix, with the
+##    added benefit of first checking whether that calculation has already
+##    been completed and stored in the cache, to save on computation time.
 
-## Write a short comment describing this function
+## makeCacheMatrix returns a matrix object that contains 4 functions,
+##    stored in a 2x2 matrix, to be used by cacheSolve
 
 makeCacheMatrix <- function(x = matrix()) {
       inverse <- NULL
